@@ -21,6 +21,29 @@
     freshpaint.page();
     </script>
 
+    <script>
+    window.freshpaint.track('purchase', {
+        transaction_id: '123', // Replace with dynamic data from your platform
+        value: 123,     // Replace with dynamic data from your platform
+        currency: '$', // Replace with dynamic data from your platform
+        affiliation: 'Online Store',
+        items: [
+        {
+            item_id: 1,
+            item_name: 'Test Item 1',
+            price: 123,
+            quantity: 99
+        },
+        {
+            item_id: 2,
+            item_name: 'Box of Chocolates',
+            price: 23.99,
+            quantity: 99
+        },
+        // Add more items as needed
+        ]
+    });
+    </script>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CJV06ZYP2C"></script>
 <script>
@@ -46,7 +69,7 @@
                 <a href="#about">About</a>
             </li>
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#experience">EXperience</a>
             </li>
             <li>
                 <a href="#education">Education</a>
